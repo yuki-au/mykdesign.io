@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="image/logo_new.png" type="image/x-icon" type="image/png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>My.k Design</title>
+    </head>
+
+    <body>
+        <div id="wrap">
+
+            <div id="op_filter">
+                <div id="op_title">
+                    <div>Welcome to <span id="op_message">My.k Web Design</span></div>
+                </div>
+                <div id="top_filter"></div>
+            </div>
+
+            <!-- menu starts -->
+            <nav id="main_nav">
+                <ul id="mainmenu">
+                    <li><a class="menupages" href="#">Home</a></li>
+                    <li><a class="menupages" href="#about">Profile</a></li>
+                    <li><a class="menupages" href="#works">My Work</a></li>
+                    <li><a class="menupages" href="#contact">Contact</a></li>
+                </ul>
+                <div id="icon_area">
+                    <a href="https://www.instagram.com/my.k_web_design/" target=”_blank”>
+                        <img class="icon" src="image/glyph-logo_May2016.png"></a>
+                </div>
+            </nav>
+
+            <div id="hidden_menu">
+                <input type="checkbox" id="tick" class="unshown">
+                <label id="humburger" for="tick">
+                    <img id="h_logo" src="image/hamburger_icon.png" alt="icon">
+                </label>
+                <label class="f_unshown" id="nav-close" for="tick"></label>
+                <div id="hidden_content">
+                    <ul id="phone_menu">
+                        <label for="tick"><img id="cross" src="image/icon_menu.png" alt="menu_icon"></label>
+                        <li><a class="hum_menu" href="#">Home</a></li>
+                        <li><a class="hum_menu" href="#about">Profile</a></li>
+                        <li><a class="hum_menu" href="#works">My Work</a></li>
+                        <li><a class="hum_menu" href="#contact">Contact</a></li>
+                    </ul>
+                    <div id="logo_area">
+                    </div>
+                </div>
+            </div>
+            <!-- menu ends -->
+
+            <div id="content" onscroll="scrollPage()">
+
+                <section id="top">
+                    <div id="top_message">
+                        <a href="#about"><img src="image/logo_new.png" alt="toplogo"></a>
+                    </div>
+                    <div id="anime_arrow">
+                        <img src="image/test.png" src="scroll">
+                    </div>
+                </section>
+                <section id="about">
+
+                    <div id="left">
+                        <img id="profile_img" src="image/pro_img.jpg" alt="topimage">
+                    </div>
+
+                    <div class="right" id="hidden_pro1">
+                        <h1 class="profile_font">I am Miyuki Arai</h1>
+                        <h2 class="skill_information">Jan 2020 - June 2020<br>
+                            Tafe Certificate iii Information Technology</h2>
+                        <h2 class="skill_information">July 2020 - present<br>
+                            Tafe Diploma Website Development</h2>
+                        <h2 id="skill_p" class="skill_information">I am web designer and web developer. I create
+                            attractive websites.
+                            Great websites contribute further success of your buisiness!
+                            Also, I am able to help with your business logo and degital illusts.
+                            <br>Please feel free to ask me!
+                        </h2>
+                    </div>
+
+                    <div id="hidden_pro2">
+                        <h1 class="profile_font2">My skill list</h1>
+                        <div id="right_skill">
+                            <h2>HTML</h2>
+                            <img src="image/rate.png" alt="rate1">
+                            <h2>CSS</h2>
+                            <img src="image/rate.png" alt="rate1">
+                            <h2>Javascript</h2>
+                            <img src="image/rate2.png" alt="rate2">
+                            <h2>PHP</h2>
+                            <img src="image/rate2.png" alt="rate2">
+                        </div>
+                    </div>
+                </section>
+                <div id="arrow2"><img src="image/arrow2.png" alt="arrow" onclick="slidePage()"></div>
+
+                <section id="works">
+                    <h1 class="main_font">My works</h1>
+                    <div id="pc_view">
+                        <div class="img_frame">
+                            <p class="message">Clothes brand website</p>
+                            <img id="image1" onclick="zoomPhoto(this)" class="gallery" src="image/jupiter_lp.jpg"
+                                title="Imaginary clothes brand website July 2020" alt="GIMP/HTML/CSS/Javascript">
+                        </div>
+                        <div class="img_frame">
+                            <p class="message">Blog</p>
+                            <img onclick="zoomPhoto(this)" class="gallery" src="image/site4.png"
+                                title="Imaginary Blog Sep 2020" alt="WordPress">
+                        </div>
+                        <div class="img_frame">
+                            <p class="message">Hairsalon Website</p>
+                            <img onclick="zoomPhoto(this)" class="gallery" src="image/site3.png"
+                                title="Imaginary Hairsalon Website 2020" alt="HTML/CSS/Javascript">
+                        </div>
+
+                        <div class="img_frame">
+                            <p class="message">Registration form</p>
+                            <img onclick="zoomPhoto(this)" class="gallery" src="image/site5.png"
+                                title="Imaginary Registration form 2020" alt="HTML/CSS/Javascript">
+                        </div>
+
+                        <div class="img_frame">
+                            <p class="message">Charity website</p>
+                            <img onclick="zoomPhoto(this)" class="gallery" src="image/site6.png"
+                                title="Imaginary Charity website 2020" alt="HTML/CSS/Javascript">
+                        </div>
+
+                        <div class="img_frame">
+                            <p class="message">Now in progress</p>
+                            <img onclick="zoomPhoto(this)" class="gallery" src="image/site7.png"
+                                title="Shopping web application" alt="Bootstrap/JQuery">
+                        </div>
+                    </div>
+
+                    <div onclick="closeImg()" id="zoom">
+                        <div id="cover"></div>
+                        <div id="zoom_detail">
+                            <div>
+                            <img id="zoom_img" src="" alt="">
+                            </div>
+                            <div id="description">
+                                <p id="title_img"></p>
+                                <p>Technologies/Software</p>
+                                <p id="desc_img"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="contact">
+                    <div class="devide_con">
+                        <h1 id="content_font" class="main_font">Keep in touch</h1>
+                        <p>Feel free to contact me</p>
+                        <p>If there is anything I can help you with, please do not hesitate to contact me</p>
+                        <form role="form" action="controllor/mail.php" method="post">
+                            <div class="form-group">
+                                <label for="exampleInputName1">Your Name</label>
+                                <input type="text" class="form-control" id="exampleInputName1" name="name" required>
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="email" required>
+                                <label for="exampleInputText1">Message</label>
+                                <textarea rows="3" name="message" required></textarea>
+                            </div>
+                            <button type="submit" name="action" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </section>
+
+                <footer>
+                    <span>&copy;2021 My.k Design</span>
+                </footer>
+            </div>
+        </div>
+        <script src="js/js.js"></script>
+    </body>
+
+    </html>
